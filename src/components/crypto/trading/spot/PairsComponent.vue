@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import StarButton from './header/StarButton.vue'
+</script>
+
 <template>
   <div class="px-4 pt-4 bg-white" style="grid-area: pairs">
     <!-- Search -->
@@ -13,7 +17,7 @@
       />
     </div>
 
-    <!-- filters -->
+    <!-- First symbol filters -->
     <div class="mt-2 flex space-x-2">
       <div
         v-for="(item, idx) in ['All', 'Pre-Token', 'Margin', 'AAM']"
@@ -23,5 +27,24 @@
         <span>{{ item }}</span>
       </div>
     </div>
+
+    <!-- Second symbol filters -->
+    <div class="mt-2 flex space-x-3 items-center">
+      <StarButton />
+      <div
+        v-for="(item, idx) in ['USDT', 'USDC', 'BTC']"
+        :key="idx"
+        class="cursor-pointer text-xs border-b-2 border-transparent hover:border-green-500 hover:text-green-500"
+      >
+        <span>{{ item }}</span>
+      </div>
+    </div>
+
+    <!-- Symbols list -->
+     <div>
+      <div class="flex">
+        
+      </div>
+     </div>
   </div>
 </template>

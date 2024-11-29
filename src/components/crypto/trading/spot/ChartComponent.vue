@@ -37,13 +37,15 @@ export default {
   mounted() {
     var chartOptions = {
       layout: {
-        background: { color: '#222' },
-        textColor: '#C3BCDB',
+        background: { color: '#fff' },
+        textColor: '#333',
       },
       grid: {
-        vertLines: { color: '#444' },
-        horzLines: { color: '#444' },
+        vertLines: { color: '#ddd' },
+        horzLines: { color: '#ddd' },
       },
+      timeScale: '#f00',
+      priceScale: '#fff',
     }
     this.chart = createChart(document.getElementById('chart'), chartOptions)
     // this.chart.timeScale().applyOptions({

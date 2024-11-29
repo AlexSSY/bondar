@@ -7,7 +7,7 @@
   border-color: transparent;
   display: grid;
   gap: 1px;
-  grid-template-columns: minmax(253px, 320px) minmax(510px, 1fr) minmax(253px, 320px);
+  grid-template-columns: minmax(253px, 340px) minmax(510px, 1fr) minmax(253px, 340px);
   grid-template-rows: 56px 360px 160px minmax(169px, 1fr) minmax(146px, auto) 560px 24px;
   grid-template-areas:
     'pairs header header'
