@@ -1,3 +1,27 @@
 <template>
-  <div class="px-3 rounded bg-white" style="grid-area: pairs;"></div>
+  <div class="px-4 pt-4 bg-white" style="grid-area: pairs">
+    <!-- Search -->
+    <div class="relative">
+      <input
+        class="bg-slate-50 rounded-lg py-1 pl-8 pr-3 w-full text-sm border-2 border-transparent focus:outline-none focus:border-cyan-300"
+        placeholder="Search"
+        type="text"
+      />
+      <font-awesome-icon
+        icon="fa-solid fa-magnifying-glass"
+        class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm"
+      />
+    </div>
+
+    <!-- filters -->
+    <div class="mt-2 flex space-x-2">
+      <div
+        v-for="(item, idx) in ['All', 'Pre-Token', 'Margin', 'AAM']"
+        :key="idx"
+        class="px-3 py-1 cursor-pointer rounded text-xs hover:bg-green-100 hover:text-green-500"
+      >
+        <span>{{ item }}</span>
+      </div>
+    </div>
+  </div>
 </template>

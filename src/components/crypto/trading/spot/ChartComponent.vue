@@ -4,7 +4,7 @@ import { createChart, CrosshairMode, LineStyle } from 'lightweight-charts'
 </script>
 
 <template>
-  <div class="px-3 rounded bg-white cursor-crosshair" id="chart" style="grid-area: chart"></div>
+  <div class="px-3 bg-white cursor-crosshair" id="chart" style="grid-area: chart"></div>
 </template>
 <script>
 export default {

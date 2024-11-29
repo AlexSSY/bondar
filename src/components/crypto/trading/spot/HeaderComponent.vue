@@ -16,7 +16,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex items-center space-x-10 px-3 rounded bg-white" style="grid-area: header">
+  <div class="flex items-center space-x-10 px-3 bg-white" style="grid-area: header">
     <!-- Here is symbol -->
     <div class="flex items-center space-x-4">
       <div class="flex items-center space-x-1">
